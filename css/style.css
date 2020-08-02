@@ -1,0 +1,403 @@
+/* Home page */
+*{
+    box-sizing: border-box
+}
+ html,body {
+     height:100%;
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family:'Lora',serif;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Candal',serif;
+    color: #444;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background: #006669;
+    color:white;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+}
+
+.btn:hover{
+    color:  white;
+    background: #5d7374;
+}
+
+.text-input{
+    padding: 2rem 1rem;
+    display: block;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0e0;
+    font-size:1.2em;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-family: "Candal",serif;
+}
+header {
+    background: cyan;
+    height: 66px;
+}
+
+header * {
+    color: white;
+
+}
+
+
+header .logo {
+    border: 1px;
+    float: left;
+    margin-left: 2cm;
+
+}
+
+header .logo-text span{
+margin: 9px;
+font-family: 'Candal', serif;
+color: lightblue;
+}
+
+
+header ul {
+    float: right;
+    border: 1px ;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.showing {
+    max-height: 100cm;
+}
+
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 0.5cm;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background:#006669;
+    transition: 0.5s;
+
+}
+header .menu-toogle {
+    display: none;
+}
+
+.page-wrapper{
+    min-height:100%;
+	/* background-image: url('../IMAGES/f.jpg'); */
+}
+
+.page-wrapper a:hover{
+    color: #006669;
+}
+
+.post-slider {
+    position: relative;
+
+}
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 1cm;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 1cm;
+    color: #006669;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+width: 84%;
+height: 350px;
+margin: 0px auto;
+padding: 10px 0px 10px 0px; 
+overflow:hidden;  
+}
+
+/* #temp{
+text-align: left;
+text-size: 24px;
+} */
+
+.post-slider .post-wrapper .post {
+    height: 330px;
+    width: 300px;
+    margin:0px 10px;
+    display: inline-block;
+    background:lightblue;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+	/*background-image: url('../IMAGES/g.jpg');*/
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post  .slider-image{
+    width:  100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*content*/
+
+.content-clearfix{
+
+    height: 500px;
+    width:90%;
+    padding-left: 10vw;
+}
+
+.content-clearfix .main-content{
+    padding-top: 5vw;
+    height:350px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+/* footer */
+
+.footer{
+    background: #303036;
+    color: #d3d3d3;
+    height: 200px;
+    position: relative;
+}
+.footer .footer-bottom{
+    background: #343a40;
+    color:#686868;
+    height: 50px;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 750px){
+
+    header {
+        position: relative;
+    }
+    header ul{
+        width:100%;
+        background: #0E94A0;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    header ul li{
+        width:100%;
+    }
+    header .menu-toogle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size:0.5cm;
+    }
+
+    header .logo{
+        margin-left: 0.8cm;
+    }
+}
+
+/*map*/	
+#map {
+    height: 440px;
+    width: 595px;
+    align-content: right;
+    border: 1px;
+    border-radius: 5px;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    /*height: 100%;*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+.pac-card{
+    margin: 10px 0px 10px 0px;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+    font-family: Roboto;
+  }
+
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+
+
+  /* Request form */
+
+/*  .bgform{
+    margin: 0;
+    padding: 0;
+    height: 1000px;
+    background-color: #000;
+    
+    /*opacity: 0.5;
+    
+  }*/
+
+ .project{
+     width:98%;
+     /*height: *;*/
+     /*margin: 20px;*/
+     margin-top: 8px;
+     margin-left: 10px;
+     border: 1px;
+     border-radius: 10px;
+     background-color: #fff;     
+
+  }
+
+  
+ .project .perDetails{
+    display: inline-block;
+     padding-left: 10vw; 
+     padding-top: 0; 
+     border-right: 1px solid black;
+     width: 44%;
+ }
+
+ .project .mapDetails{
+     display: inline-block;
+    padding-left: 8vw;
+    padding-top: 3vw;
+    /*border:1px black;*/
+    width:49%;
+  }
+
+ .project .submitBtn{
+    align-content: right;
+  }
+
+
+.reqHolder{
+   width:98%;
+     margin-top: 8px;
+     /*padding-bottom: 10vw;*/
+     margin-left: 10px;
+     border: 1px;
+     border-radius: 10px;
+     background-color: #fff;
+}
+
+.reqHolder .details{
+display: inline-block;
+     padding-left: 10vw; 
+     padding-top: 10vw; 
+     border-right: 1px solid black;
+     width: 44%;
+}
+
+/*.reqHolder .border{
+    /*height: 100%;
+    width: 5px;
+    display: inline-block;
+    background-color: black;
+}*/
+
+.reqHolder .details1{    
+     display: inline-block;
+    padding-left: 8vw;
+    padding-top: 3vw;
+    /*border:1px black;*/
+    width:49%;
+}
+
+
+/*#mapreq {
+    height: 480px;
+    width: 640px;
+    align-content: right;
+  }*/
+
